@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Ducky Wikipedia</ShortName>
+  <Description>Go to the top DuckDuckGo site:wikipedia.org search result</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="48" height="48" type="image/png">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiCQULOwp9pGutAAAC2ElEQVRYw+2Yu47TQBSGv1ltj2gyoqRaKmRoqNACRSK6RRSkW7FN3iASTxBewKLj0iCloKGJREVnUbGisWipnDT7BvNTeOx4PM6FZb3VniminDNz/nMf24aAnPhvOjDNf/Wfq1DdBWP6Ub+GMH2pryBMf+pLiIP+lHuIvgFMnwG6Fg9uAHbSIcBzloDltmdesASGvOVhB/8df5g1+Bcso70XLLnHZwAnp0xTJTKNZTVTJqeFJp6DkNFEcznlSjWq+SOlyoO95flcTk44lavQVNTiQq5ec1kvmTW4uTcpbfCcZjIyGjXOsxYWGnuAcXDIaeo9mKq9exqY4jSXkfW2RwBOC29r0jqWeWubnmWySgJVTk6pCPx0CqroASeAOOdnUAmPGAKw4kvN+86SNxwF+1Z8JeFJWEau5aIVQknLslyJaPiQyQaRriIQhjHyAI5JADjnR8A/YogBVnwA4CMrzhi07P+E5Wm7EVwUReMroe2DlRGyKpR1FILbwI0ACiVCiCiBVZVPNZbVIlI1k9F8N8C6KMcdPpR5MJooNsxGmdsAUAbDyERJHPuGs5F3ZWjT/QBc3XCTCNrUeWifsVH3bAHIvA+2w4cqD+3ybjfYhjKtGusOoLoo13TL/37jd8B/j+V197x2nbgLH4wwbXlj3k4Dj+lI+5YQlTEtg9RM3FhG87pP8oCf/ytA6rth1LCzTPvY3w1VzPPOBtsJ4OrOrZpn5JOe1+ErrZ5ssX8rwMxX/biukypcVS2lvsFGcpcBKPxktcrkNGrUeeYBEhWaySi7HIDzlyiaKQ3mTFHPpVRJ54DYEyD3ibbR9F/UtzcdA25vgPUtbVrTs/C1xIYBsSfAOtpxG80bid62djzZ3WUIDDiJJMe8AgY8265g16PjgDPEKaMOyWPgtHXtx3S4Q859przolLzk1wZJk3p/Abl5CdxJ1/Ei3hdE41NCHxCtjyFXCRN+zvkL9aEWt2hTkbEAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDktMDVUMTY6NTk6MTAtMDU6MDD6pZOWAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA5LTA1VDE2OjU5OjEwLTA1OjAwi/grKgAAAABJRU5ErkJggg==</Image>
+  <Url type="text/html" method="post" template="https://duckduckgo.com/html/">
+    <Param name="q" value="\site:wikipedia.org {searchTerms}"/>
+  </Url>
+  <Url type="application/x-suggestions+json" method="get" template="https://en.wikipedia.org/w/api.php?action=opensearch&amp;search={searchTerms}&amp;namespace=0" />
+  <Url type="application/x-suggestions+xml" method="get" template="https://en.wikipedia.org/w/api.php?action=opensearch&amp;format=xml&amp;search={searchTerms}&amp;namespace=0" />
+  <moz:SearchForm>https://en.wikipedia.org/wiki/Special:Search</moz:SearchForm>
+</OpenSearchDescription>
