@@ -1,7 +1,6 @@
-OpenSearch XML for a [Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-wikipedia/) to go directly to the top DuckDuckGo ```site:wikipedia.org``` search result using:
+WebExtensions search overrides [Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-wikipedia/) for going directly to the top DuckDuckGo ```site:wikipedia.org``` search result using:
 
-```xml
-<Url type="text/html" method="post" template="https://duckduckgo.com/html/">
-  <Param name="q" value="\site:wikipedia.org {searchTerms}"/>
-</Url>
+```json
+"search_url": "https://duckduckgo.com/html/",
+"search_url_post_params": "q=\\site:wikipedia.org {searchTerms}",
 ```
