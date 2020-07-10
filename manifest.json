@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "DuckDuckGo Wikipedia",
-  "version": "1.0",
+  "version": "1.1",
 
   "description": "Search engine extension to go to the top DuckDuckGo site:wikipedia.org search result",
 
@@ -12,7 +12,7 @@
   "chrome_settings_overrides": {
     "search_provider": {
       "name": "DuckDuckGo Wikipedia",
-      "search_url": "https://duckduckgo.com/html/",
+      "search_url": "https://html.duckduckgo.com/html/",
       "search_url_post_params": "q=\\site:wikipedia.org {searchTerms}",
       "keyword": "w",
       "encoding": "UTF-8",
